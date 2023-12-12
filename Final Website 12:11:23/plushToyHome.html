@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+        <script src="popbox.js"></script>
+        <title>Docuement</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+                <a href="allClothingIndex.html">Clothing Home</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="image-text-container1">
+      <div class="image-container">
+          <img src="Untitled-design.png" alt="Left Butterfly Image" class="left-image">
+        </div>
+<button id="quiz-button" onclick="showQuiz()">Take the Plush Toy Quiz</button>
+
+<div id="quiz-container" class="quiz-container">
+<h1>Plush Toy Personality Quiz</h1>
+    <div class="question" id="question1">
+      <p>What is your favorite color?</p>
+      <label><input type="radio" name="q1" value="Blue"> Blue</label>
+      <label><input type="radio" name="q1" value="Purple"> Purple</label>
+      <label><input type="radio" name="q1" value="Green"> Green</label>
+      <label><input type="radio" name="q1" value="Pink"> Pink</label>
+      <label><input type="radio" name="q1" value="Black"> Black</label>
+    </div>
+  
+    <div class="question" id="question2">
+      <p>Pick one of these words to describe yourself:</p>
+      <label><input type="radio" name="q2" value="Funny"> Funny</label>
+      <label><input type="radio" name="q2" value="Shy"> Shy</label>
+      <label><input type="radio" name="q2" value="Friendly"> Friendly</label>
+      <label><input type="radio" name="q2" value="Grumpy"> Grumpy</label>
+      <label><input type="radio" name="q2" value="Chill"> Chill</label>
+    </div>
+  
+    <div class="question" id="question3">
+      <p>What does your ideal day look like?</p>
+      <label><input type="radio" name="q3" value="Beach"> Walking on the beach</label>
+      <label><input type="radio" name="q3" value="Sushi"> Eating some sushi</label>
+      <label><input type="radio" name="q3" value="Mountains"> Climbing in the mountains</label>
+      <label><input type="radio" name="q3" value="Book"> Reading a book</label>
+      <label><input type="radio" name="q3" value="Concert"> Going to a concert</label>
+    </div>
+  
+    <div class="question" id="question4">
+      <p>What is your love language?</p>
+      <label><input type="radio" name="q4" value="Affirmation"> Words of affirmation</label>
+      <label><input type="radio" name="q4" value="Touch"> Physical touch</label>
+      <label><input type="radio" name="q4" value="Time"> Quality time</label>
+      <label><input type="radio" name="q4" value="Gift"> Gift giving</label>
+      <label><input type="radio" name="q4" value="None"> Love isn't for me</label>
+    </div>
+  
+    <div class="question" id="question5">
+      <p>Pick a mythical creature from this list:</p>
+      <label><input type="radio" name="q5" value="Unicorn"> Unicorn</label>
+      <label><input type="radio" name="q5" value="Dragon"> Dragon</label>
+      <label><input type="radio" name="q5" value="Mermaid"> Mermaid</label>
+      <label><input type="radio" name="q5" value="Phoenix"> Phoenix</label>
+      <label><input type="radio" name="q5" value="Fairy"> Fairy</label>
+    </div>
+  
+<button class="submit-button" onclick="calculateResult()">Submit</button>
+<button class="close-button" onclick="hideQuiz()">Close</button>
+</div>
+
+<div class="image-container">
+  <img src="Untitled-design.png" alt="Left Butterfly Image" class="left-image">
+</div>
+</div>
+
+<h2>Or, Shop all our toys!</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="Gatsby.png" alt="Gatsby the Goat Toy" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Blubba.png" alt="Blubba the blue narwhal toy" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Jeffrey-Pink.png" alt="Jefrrey Pink the flamingo toy" style="width:100%">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <p>Gatsby the Goat<br>$22.99</p>
+  </div>
+  <div class="column">
+    <p>Blubba the Narwhal<br>$30.99</p>
+  </div>
+  <div class="column">
+    <p>Jeffrey Pink the Flamingo<br>$25.99</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="OrangeBird.png" alt="Phi Phi the bird toy" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Saphire.png" alt="Saphire the Lizard toy" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Wayne.png" alt="Wayne the bat toy" style="width:100%">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <p>Phi Phi the Bird<br>$15.99</p>
+  </div>
+  <div class="column">
+    <p>Saphire the Lizard<br>$22.99</p>
+  </div>
+  <div class="column">
+    <p>Wayne the Bat<br>$26.99</p>
+  </div>
+</div>
+
+<footer>
+  Copyright Isabel DiFabio 2023
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,434 @@
+body{
+  background: linear-gradient(to bottom, #ffcece, #F9B2E2);
+  background-repeat: no-repeat;
+}
+
+nav{
+  background-color: rgb(255, 255, 255, 0.5);
+  height: auto;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+}
+
+#nav ul{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fotorama {
+  margin: auto;
+  max-width: 40%;
+  z-index: 1;
+}
+
+nav li{
+  display: inline-block;
+}
+
+nav a{
+    color: palevioletred;
+    font-size: 20px;
+
+    font-family: 'Pixelify Sans', sans-serif;
+    width: auto;
+    margin: 10px;
+
+  	background-color: #FFE0FD;
+  	padding: 0px 20px 0px 20px;
+  	border: 4px solid palevioletred;
+    display: block;
+    text-align: center;
+    float: left;
+}
+
+h1{
+	color: palevioletred;
+	font-size: 6rem;
+  margin: 50px 0 30px 0;
+  background-image: url('Tab.webp');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-origin: content-box;
+  font-family: 'Pixelify Sans', sans-serif;
+  text-align: center;
+}
+
+
+h2{
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 3rem;
+  margin: 0px 50px;
+  color: white;
+  text-align: center !important;
+}
+
+h3{
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 3rem;
+
+  margin: 0px 50px;
+  color: white;
+}
+
+h5{
+  font-family: "Courier Prime", Sans-serif;
+  color:pink;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#quiz-button {
+  display: block;
+  padding: 15px 30px;
+  font-size: 24px;
+  color: #fff;
+  background-color: rgb(227, 156, 180);
+  border: 4px solid palevioletred;
+  cursor: pointer;
+  font-family: 'Pixelify Sans', sans-serif;
+  text-align: center;
+  font-size: 6rem;
+  margin: 100px auto 50px auto;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+#quiz-button:hover {
+  background-color: rgb(141, 47, 78);
+  border-color: rgb(141, 47, 78);
+}
+
+.quiz-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  max-height: 80%;
+  overflow-y: auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.question {
+  margin-bottom: 10px;
+}
+
+.question label {
+  color: palevioletred !important;
+  font-size: 20px;
+  font-family: 'Pixelify Sans', sans-serif;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.answer {
+  margin-right: 10px;
+}
+
+p{
+  color: palevioletred;
+  font-size: 20px;
+  font-family: "Courier Prime", Sans-serif;
+  margin: 0px 50px;
+  padding: 20px 20px 20px 20px;
+  background-color: #FFE0FD;
+  border: solid palevioletred;
+}
+
+.image-text-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.image-text-container1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+.image-container{
+  flex: 1;
+}
+
+#quiz-container button.submit-button {
+  color: palevioletred;
+  font-size: 20px;
+  font-family: "Courier Prime", Sans-serif;
+  padding: 10px 20px;
+  background-color: #FFE0FD;
+  border: 4px solid palevioletred;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#quiz-container button.close-button {
+  color: palevioletred;
+  font-size: 20px;
+  font-family: "Courier Prime", Sans-serif;
+  padding: 10px 20px;
+  background-color: #FFE0FD;
+  border: 4px solid palevioletred;
+  cursor: pointer;
+}
+
+#quiz-container button.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#quiz-container button.close-button:hover,
+#quiz-container button.submit-button:hover {
+  background-color: rgb(255, 224, 253);
+  border-color: rgb(141, 47, 78);
+}
+
+.left-image {
+  max-width: 250px;
+  height: auto;
+  margin: 10px 10px auto 10px;
+}
+
+.text-content {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+
+.rounded-image {
+  border-radius: 50%;
+}
+
+img{
+  border: 4px solid palevioletred;
+  height: auto;
+}
+
+.img2{
+  border: none !important;
+  height: 50px !important;
+  width: 60px !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/*Here*/
+.left-image,.center-image,
+.right-image {
+  max-width: 250px;
+  height: auto;
+  margin: 10px;
+  border: none !important;
+
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.custom-link a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #FFE0FD;
+  color: palevioletred;
+  text-decoration: none;
+  border: 4px solid palevioletred;
+}
+.custom-link a:hover {
+  background-color: rgb(255, 224, 253);
+  border-color: rgb(141, 47, 78);
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.column-2 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.column-vibe{
+  float:left;
+  width: 50%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 4px solid palevioletred;
+  color: solid palevioletred;
+  background-color: #FFE0FD;
+  font-size: 16px;
+  font-family: "Courier Prime", Sans-serif;
+  border-radius: 4px;
+}
+
+input[type=text]:focus {
+  border: 4px solid rgb(141, 47, 78);
+}
+
+input[type=email]:focus {
+  border: 4px solid rgb(141, 47, 78);
+}
+
+label{
+  color: white !important;
+  font-size: 2rem;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+input[type=email] {
+  width: 50%;
+  padding: 12px 20px;
+  font-size: 16px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  color: solid palevioletred;
+  border: 4px solid palevioletred;
+  background-color: #FFE0FD;
+  font-family: "Courier Prime", Sans-serif;
+  border-radius: 4px;
+}
+
+textarea{
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 4px solid palevioletred;
+  border-radius: 4px;
+  background-color: #FFE0FD;
+  font-size: 16px;
+  font-family: "Courier Prime", Sans-serif;
+  resize: none;
+}
+
+textarea:focus{
+  border: 4px solid rgb(141, 47, 78);
+}
+
+fieldset{
+  border:none;
+}
+
+input[type=submit]{
+  color: palevioletred;
+  font-size: 20px;
+  font-family: "Courier Prime", Sans-serif;
+  padding: 20px 20px 20px 20px;
+  background-color: #FFE0FD;
+  border: solid palevioletred;
+}
+
+footer{
+	color: white;
+	padding: 50px 0px 10px 0px;
+	font-family: "Courier Prime", Sans-serif;
+	font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+.left-image {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 10px auto 10px;
+}
+
+nav a {
+  font-size: 12px;
+}
+
+#nav ul {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h1 {
+  margin: 70px 0 30px 0;
+  font-size: 3rem;
+}
+
+h2,
+h3 {
+  font-size: 2rem;
+}
+
+.left-image {
+  margin: 10px 0 20px 0;
+}
+
+.column,
+.column-vibe {
+  padding: 5px;
+}
+
+input[type=submit] {
+  padding: 10px;
+}
+
+.img2 {
+  width: 40%;
+}
+
+.text-content {
+  text-align: center;
+  margin-top: 10px;
+}
+
+p {
+  margin: 0;
+  padding: 10px;
+}
+
+#quiz-button {
+  padding: 10px 15px;
+  font-size: 22px;
+  margin: 50px auto 20px auto;
+}
+
+body {
+  padding-top: 60px;
+}
+}
